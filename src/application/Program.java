@@ -31,7 +31,7 @@ public class Program {
 			psS.addValue(value);
 		}
 		psS.print();
-		System.out.println("First: " + psS.first());
+		System.out.println("First: " + ps.first());
 		
 	}
 	
