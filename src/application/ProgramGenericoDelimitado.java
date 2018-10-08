@@ -27,7 +27,7 @@ public class ProgramGenericoDelimitado {
 			}
 
 			Product p = CalculationService.max(list);
-			System.out.println("Max: ");
+			System.out.println("Most Expensive: ");
 			System.out.println(p);
 
 		} catch (IOException e) {
