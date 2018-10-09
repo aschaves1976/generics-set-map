@@ -1,6 +1,6 @@
 package model.entities;
 
-public class ProductSet {
+public class ProductSet implements Comparable<ProductSet> {
 	private String name;
 	private Double price;
 
@@ -55,5 +55,16 @@ public class ProductSet {
 			return false;
 		return true;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Product [" + getName() + " ," + getPrice() + "]";
+	}
+
+	@Override
+	public int compareTo(ProductSet other) {
+		// TODO Auto-generated method stub
+		return getName().toUpperCase().compareTo(other.getName().toUpperCase());
+	}
+
 }
